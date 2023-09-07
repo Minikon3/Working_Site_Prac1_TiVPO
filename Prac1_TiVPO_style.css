@@ -1,0 +1,224 @@
+/* Основной стиль */
+body {
+    font-family: 'Cuprum', sans-serif;
+    background-color: #f0f0f0;
+    color: #373756;
+    background-image: url('background-image.jpg'); /* Замените 'background-image.jpg' на путь к вашей фоновой картинке */
+    background-size: cover;
+    background-attachment: fixed; /* Фиксирует фоновую картинку */
+}
+
+header {
+    background: linear-gradient(to bottom, #66b3ff, #0077cc);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #507c82;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*Блок новостей*/
+.news {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(to bottom, #e0e0e0, #d0d0d0);
+}
+
+.news h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.news p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.news a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+.news a:hover {
+    text-decoration: underline;
+}
+
+/* навигация */
+nav {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 10%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*Стили боковой панели и кнопок*/
+/* Стили для боковой панели */
+#news-filter {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    width: 200px; /* Ширина боковой панели */
+    height: 50%; /* Сделаем её высотой экрана */
+    padding: 20px; /* Отступы внутри боковой панели */
+    background: linear-gradient(to bottom, #0077cc, #003366); /* Градиентный фон с синими тонами */
+    color: #fff; /* Цвет текста */
+}
+
+/* Стили для кнопок внутри боковой панели */
+#news-filter button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    text-align: left;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Стили для выбранной кнопки */
+#news-filter button.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left: 4px solid #fff; /* Левая граница для активной кнопки */
+    padding-left: 16px; /* Отступ слева для активной кнопки */
+}
+
+.news-detail{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-detail img {
+    float: right;
+    margin: 0 0 10px 10px;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Стили для первой буквы текста */
+.first-letter-bold:first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* CSS для боковой панели управления новостью */
+.news-sidebar {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 30%;
+    left: 0;
+}
+
+.news-sidebar a {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.news-sidebar iframe {
+    border: none;
+    width: 100%;
+}
+
+/* Стили для анекдотов и кнопок */
+.joke {
+    border: 1px solid #bbb;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    height: 65px;
+    overflow: hidden; /* Скроет лишний текст */
+}
+
+.joke-text {
+    margin: 5px;
+    padding: 5px;
+}
+
+.joke-button {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Стили для блока главной страницы */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Занимает всю высоту экрана */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 100px;
+    margin-top: 50px;
+}
+
+.home_sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стили для блока с описанием сайта */
+.site-description {
+    text-align: center;
+    max-width: 600px;
+}
+
+.site-description h1 {
+    font-size: 24px;
+}
+
+.site-description p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Стили для линий между абзацами */
+.line {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}

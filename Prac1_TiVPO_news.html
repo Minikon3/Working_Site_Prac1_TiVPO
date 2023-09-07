@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Prac1_TiVPO_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet"> 
+    <title>Новости</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Prac1_TiVPO.html">Главная</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="Prac1_TiPVO_anek.html">Анекдоты</a></li>
+            </ul>
+        </nav>
+        <h1>Последние новости</h1>
+    </header>
+    <main class="grid-container">
+        <article class="news" data-category="sport">
+            <h2>Заголовок новости 1</h2>
+            <p>Описание новости 1...</p>
+            <a href="Prac1_TiVPO_news_page1.html">Читать далее</a>
+        </article>
+        <article class="news" data-category="politics">
+            <h2>Заголовок новости 2</h2>
+            <p>Описание новости 2...</p>
+            <a href="Prac1_TiVPO_news_page2.html">Читать далее</a>
+        </article>
+        <article class="news" data-category="economy">
+            <h2>Заголовок новости 3</h2>
+            <p>Описание новости 3...</p>
+            <a href="Prac1_TiVPO_news_page3.html">Читать далее</a>
+        </article>
+        <article class="news" data-category="sport">
+            <h2>Заголовок новости 4</h2>
+            <p>Описание новости 1...</p>
+            <a href="Prac1_TiVPO_news_page4.html">Читать далее</a>
+        </article>
+        <article class="news" data-category="politics">
+            <h2>Заголовок новости 5</h2>
+            <p>Описание новости 2...</p>
+            <a href="Prac1_TiVPO_news_page5.html">Читать далее</a>
+        </article>
+        <article class="news" data-category="economy">
+            <h2>Заголовок новости 6</h2>
+            <p>Описание новости 3...</p>
+            <a href="Prac1_TiVPO_news_page6.html">Читать далее</a>
+        </article>
+        <!-- Добавьте больше новостей, если необходимо -->
+    </main>
+    <aside id="news-filter">
+        <h2>Выберите тип новостей:</h2>
+        <ul>
+            <li><button id="filter-all">Все новости</button></li>
+            <li><button id="filter-sport">Спорт</button></li>
+            <li><button id="filter-politics">Политика</button></li>
+            <li><button id="filter-economy">Экономика</button></li>
+        </ul>
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>
